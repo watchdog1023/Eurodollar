@@ -1,0 +1,25 @@
+# It is not recommended to modify this file in-place, because it will
+# be overwritten during package upgrades. If you want to add further
+# options or overwrite existing ones then use
+# $ systemctl edit eurodollard.service
+# See "man systemd.service" for details.
+
+# Note that almost all daemon options could be specified in
+# /etc/eurodollar/eurodollar.conf
+
+[Unit]
+Description=Eurodollar daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/eurodollard -daemon -conf=/etc/eurodollar/eurodollar.conf -pid=/run/eurodollard/eurodollard.pid
+# Creates /run/eurodollard owned by eurodollar
+RuntimeDirectory=eurodollard
+User=eurodollar
+Type=forking
+PIDFile=/run/eurodollard/eurodollard.pid
+Restart=on-failure
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

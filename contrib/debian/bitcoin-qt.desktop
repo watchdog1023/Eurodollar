@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=Eurodollar Core
+Comment=Connect to the Eurodollar P2P Network
+Comment[de]=Verbinde mit dem Eurodollar peer-to-peer Netzwerk
+Comment[fr]=Eurodollar, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Eurodollar, eşten eşe kriptografik sanal para birimi
+Exec=eurodollar-qt %u
+Terminal=false
+Type=Application
+Icon=eurodollar128
+MimeType=x-scheme-handler/eurodollar;
+Categories=Office;Finance;
+StartupWMClass=Eurodollar-qt

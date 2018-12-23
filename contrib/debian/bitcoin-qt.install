@@ -1,0 +1,6 @@
+usr/local/bin/eurodollar-qt usr/bin
+share/pixmaps/eurodollar32.xpm usr/share/pixmaps
+share/pixmaps/eurodollar16.xpm usr/share/pixmaps
+share/pixmaps/eurodollar128.png usr/share/pixmaps
+debian/eurodollar-qt.desktop usr/share/applications
+debian/eurodollar-qt.protocol usr/share/kde4/services/

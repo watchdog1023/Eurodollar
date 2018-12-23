@@ -1,0 +1,8 @@
+/usr/bin/eurodollar-cli		--	gen_context(system_u:object_r:eurodollar_exec_t,s0)
+/usr/sbin/eurodollard		--	gen_context(system_u:object_r:eurodollar_exec_t,s0)
+/usr/lib(64)?/eurodollar/eurodollard		--	gen_context(system_u:object_r:eurodollar_exec_t,s0)
+
+/etc/eurodollar(/.*)?		gen_context(system_u:object_r:eurodollar_conf_t,s0)
+/var/lib/eurodollar(/.*)?		gen_context(system_u:object_r:eurodollar_var_lib_t,s0)
+
+(/var)?/run/eurodollard(/.*)?   gen_context(system_u:object_r:eurodollar_var_run_t,s0)

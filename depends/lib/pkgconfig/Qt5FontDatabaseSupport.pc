@@ -1,0 +1,14 @@
+prefix=/mnt/coin/EuroDollar/eurodollar-master/depends/x86_64-w64-mingw32
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 FontDatabaseSupport
+Description: Qt FontDatabaseSupport module
+Version: 5.9.6
+Libs: -L${libdir} -lQt5FontDatabaseSupportd 
+Libs.private: -L/mnt/coin/EuroDollar/eurodollar-master/depends/x86_64-w64-mingw32/lib /mnt/coin/EuroDollar/eurodollar-master/depends/x86_64-w64-mingw32/lib/libQt5Guid.a -lgdi32 -lcomdlg32 -loleaut32 -limm32 /mnt/coin/EuroDollar/eurodollar-master/depends/x86_64-w64-mingw32/lib/libqtlibpngd.a /mnt/coin/EuroDollar/eurodollar-master/depends/x86_64-w64-mingw32/lib/libqtharfbuzzd.a /mnt/coin/EuroDollar/eurodollar-master/depends/x86_64-w64-mingw32/lib/libQt5Cored.a -lmpr -lversion -lws2_32 -lkernel32 -luser32 -lshell32 -luuid -lole32 -ladvapi32 -lwinmm -lz /mnt/coin/EuroDollar/eurodollar-master/depends/x86_64-w64-mingw32/lib/libqtpcre2d.a  
+Cflags: -I${includedir}/QtFontDatabaseSupport 
+Requires: Qt5Core Qt5Gui
+
