@@ -1,7 +1,7 @@
 Eurodollar Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/eurodollar/eurodollar.svg?branch=master)](https://travis-ci.org/eurodollar/eurodollar)
+[![Build Status](https://travis-ci.org/watchdog1023/Eurodollar.svg?branch=master)](https://travis-ci.org/watchdog1023/Eurodollar)
 
 https://eurodollarcore.org
 
